@@ -5,7 +5,8 @@
 }
 body {
     width: 100%;
-    background-color: #f0e5cf;
+    /* background-color: #f0e5cf; */
+    background-color: rgb(0, 146, 162);
 }
 ::-webkit-scrollbar {
     width: 0;
@@ -39,6 +40,7 @@ body {
     height: 80%;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
 }
 .hero-section {
     width: 50%;
@@ -87,7 +89,6 @@ body {
 .input-form-calculator {
     width: 40%;
     height: 100%;
-    border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,11 +126,9 @@ body {
     border: none;
 }
 .input-form-calculator form .button-container {
-    width: 100%;
-    padding: 4px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    width: 70%;
+    padding: 0 8px;
+    align-self: flex-start;
     gap: 14px;
 }
 .input-form-calculator form .button-container button {
@@ -287,6 +286,16 @@ body {
     }
     .input-form-calculator {
         height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .input-form-calculator form {
+        width: 75%;
+        align-items: center;
+    }
+    .input-form-calculator form .input-container {
+        width: 80%;
     }
     .results-container #output-desc, .results-container #output {
         font-size: .8rem;
@@ -317,6 +326,9 @@ body {
     .input-form-calculator button {
         padding: 1px;
         font-size: 10px;
+    }
+    .input-form-calculator form {
+        width: 100%;
     }
     .input-form-calculator form .input-container {
         width: 90%;
